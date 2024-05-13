@@ -1,10 +1,14 @@
 import { Blob } from "./blob";
+import { Das } from "./das";
+import { Fraud } from "./fraud";
 
 export class Client {
     url: string;
     apiKey: string;
     log: boolean;
     Blob: Blob;
+    Das: Das;
+    Fraud: Fraud;
 
     constructor(url: string, apiKey: string, log: boolean = false) {
         this.url = url;
@@ -12,6 +16,8 @@ export class Client {
         this.log = log;
 
         this.Blob = new Blob(this);
+        this.Das = new Das(this);
+        this.Fraud = new Fraud(this);
     }
 
     async request(payload: any): Promise<any> {
@@ -32,7 +38,7 @@ export class Client {
             }
 
             const jsonResponse = await response.json();
-
+            
             if (jsonResponse.error) {
                 throw new Error(`${jsonResponse.error.message}`);
             }
