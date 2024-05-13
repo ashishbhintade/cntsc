@@ -13,7 +13,7 @@ git clone https://github.com/ashishbhintade/cntsc.git
 ## Request & Response
 
 Invalid Namespace Error Response:
-```json
+```
 {
   jsonrpc: '2.0',
   id: 1,
@@ -26,7 +26,7 @@ Invalid Namespace Error Response:
 ```
 
 Syncing Header Error Response:
-```json
+```
 {
   jsonrpc: '2.0',
   id: 1,
