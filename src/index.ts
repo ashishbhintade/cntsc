@@ -2,6 +2,7 @@ import { Blob } from "./blob";
 import { Das } from "./das";
 import { Fraud } from "./fraud";
 import { Node } from "./node";
+import { P2P } from "./p2p";
 
 export class Client {
     url: string;
@@ -11,6 +12,7 @@ export class Client {
     Das: Das;
     Fraud: Fraud;
     Node: Node;
+    P2P: P2P;
 
     constructor(url: string, apiKey: string, log: boolean = false) {
         this.url = url;
@@ -21,6 +23,7 @@ export class Client {
         this.Das = new Das(this);
         this.Fraud = new Fraud(this);
         this.Node = new Node(this);
+        this.P2P = new P2P(this);
     }
 
     async request(payload: any): Promise<any> {
