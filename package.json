@@ -1,16 +1,25 @@
 {
-  "name": "cnc-ts",
+  "name": "cntsc",
+  "version": "0.0.1",
+  "description": "Celestia Node TypeScript SDK",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashishbhintade/cntsc.git"
+  },
+  "keywords": [
+    "celestia",
+    "typescript",
+    "celestia client",
+    "blockchain"
+  ],
+  "author": "Ashish Bhintade",
+  "license": "MIT",
   "packageManager": "yarn@3.8.2",
   "devDependencies": {
     "typescript": "^5.4.5"
   },
   "scripts": {
     "build": "rm -rf ./dist && yarn tsc"
-  },
-  "dependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/winston": "^2.4.4",
-    "axios": "^1.6.8",
-    "winston": "^3.13.0"
   }
 }
