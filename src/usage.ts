@@ -3,7 +3,7 @@ import { Client } from "./index";
 async function main() {
     let authTokenMainnet =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJwdWJsaWMiLCJyZWFkIl19.ER8p9mNj6JDR4bqKJkUVUvVEqzsVLBULqgEcRnqyD4U";
-
+    let adminAuthTokenMainnet = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJwdWJsaWMiLCJyZWFkIiwid3JpdGUiLCJhZG1pbiJdfQ.Dlz5O9fOwNEeWNtgumqwKtQVILwfveya0dE7Y5zWPE4"
     let node = new Client("http://localhost:26658", authTokenMainnet);
 
     // let GetResult = await node.Blob.Get(
@@ -55,6 +55,23 @@ async function main() {
 
     console.log(FraudGetResult);
 
+    // // let newToken = await node.Node.AuthNew(["admin"]);
+
+    // let newTokenPerms = await node.Node.AuthVerify(authTokenMainnet);
+
+    // console.log(newTokenPerms);
+
+    // let InfoResult = await node.Node.Info();
+
+    // console.log(InfoResult);
+
+    // let LogLevelSetResult = await node.Node.LogLevelSet("das", "info");
+
+    // console.log(LogLevelSetResult);
+
+    // let ReadyResult = await node.Node.Ready();
+
+    // console.log(ReadyResult);
 }
 
 main();

@@ -1,6 +1,7 @@
 import { Blob } from "./blob";
 import { Das } from "./das";
 import { Fraud } from "./fraud";
+import { Node } from "./node";
 
 export class Client {
     url: string;
@@ -9,6 +10,7 @@ export class Client {
     Blob: Blob;
     Das: Das;
     Fraud: Fraud;
+    Node: Node;
 
     constructor(url: string, apiKey: string, log: boolean = false) {
         this.url = url;
@@ -18,6 +20,7 @@ export class Client {
         this.Blob = new Blob(this);
         this.Das = new Das(this);
         this.Fraud = new Fraud(this);
+        this.Node = new Node(this);
     }
 
     async request(payload: any): Promise<any> {
@@ -28,7 +31,7 @@ export class Client {
 
         try {
             const response = await fetch(this.url, {
-                method: 'POST',
+                method: "POST",
                 headers,
                 body: JSON.stringify(payload),
             });
@@ -38,7 +41,7 @@ export class Client {
             }
 
             const jsonResponse = await response.json();
-            
+
             if (jsonResponse.error) {
                 throw new Error(`${jsonResponse.error.message}`);
             }
@@ -50,6 +53,4 @@ export class Client {
             throw new Error(`Error during fetch: ${error}`);
         }
     }
-
-
 }
