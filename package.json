@@ -15,13 +15,12 @@
   ],
   "author": "Ashish Bhintade",
   "license": "MIT",
-  "packageManager": "yarn@3.8.2",
   "devDependencies": {
     "typedoc": "^0.25.13",
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "rm -rf ./dist && yarn tsc",
+    "build": "rm -rf ./dist && npx tsc",
     "docs": "npx typedoc --entryPointStrategy expand ./src"
   }
 }

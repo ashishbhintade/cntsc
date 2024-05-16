@@ -1,8 +1,11 @@
 import { Blob } from "./blob";
 import { Das } from "./das";
 import { Fraud } from "./fraud";
+import { Header } from "./header";
 import { Node } from "./node";
 import { P2P } from "./p2p";
+import { Share } from "./share";
+import { State } from "./state";
 
 export class Client {
     url: string;
@@ -11,8 +14,11 @@ export class Client {
     Blob: Blob;
     Das: Das;
     Fraud: Fraud;
+    Header: Header;
     Node: Node;
     P2P: P2P;
+    Share: Share;
+    State: State;
 
     constructor(url: string, apiKey: string, log: boolean = false) {
         this.url = url;
@@ -22,8 +28,11 @@ export class Client {
         this.Blob = new Blob(this);
         this.Das = new Das(this);
         this.Fraud = new Fraud(this);
+        this.Header = new Header(this);
         this.Node = new Node(this);
         this.P2P = new P2P(this);
+        this.Share = new Share(this);
+        this.State = new State(this);
     }
 
     async request(payload: any): Promise<any> {
