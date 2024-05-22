@@ -1,0 +1,1 @@
+{"version":3,"file":"fraud.d.ts","sourceRoot":"","sources":["../../../src/types/fraud.ts"],"names":[],"mappings":"AAAA,yBAAiB,KAAK,CAAC;IACnB,KAAY,SAAS,GAAG,MAAM,CAAC;IAE/B,UAAiB,KAAK;QAClB,UAAU,EAAE,MAAM,CAAC;QACnB,IAAI,EAAE,MAAM,CAAA;KACf;CACJ"}

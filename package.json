@@ -1,26 +1,26 @@
 {
-  "name": "cntsc",
-  "version": "0.0.1",
-  "description": "Celestia Node TypeScript SDK",
-  "main": "src/index.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ashishbhintade/cntsc.git"
-  },
-  "keywords": [
-    "celestia",
-    "typescript",
-    "celestia client",
-    "blockchain"
-  ],
-  "author": "Ashish Bhintade",
-  "license": "MIT",
-  "devDependencies": {
-    "typedoc": "^0.25.13",
-    "typescript": "^5.4.5"
-  },
-  "scripts": {
-    "build": "rm -rf ./dist && npx tsc",
-    "docs": "npx typedoc --entryPointStrategy expand ./src"
-  }
+    "name": "cntsc",
+    "version": "0.0.1",
+    "description": "Celestia Node TypeScript SDK",
+    "main": "dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ashishbhintade/cntsc.git"
+    },
+    "keywords": [
+        "celestia",
+        "typescript",
+        "celestia client",
+        "blockchain"
+    ],
+    "author": "Ashish Bhintade",
+    "license": "MIT",
+    "devDependencies": {
+        "typedoc": "^0.25.13",
+        "typescript": "^5.4.5"
+    },
+    "scripts": {
+        "build": "rm -rf ./dist && npx tsc",
+        "docs": "npx typedoc --entryPointStrategy expand ./src"
+    }
 }

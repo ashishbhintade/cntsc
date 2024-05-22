@@ -1,0 +1,1 @@
+{"version":3,"file":"peer.d.ts","sourceRoot":"","sources":["../../../src/types/peer.ts"],"names":[],"mappings":"AAAA,yBAAiB,IAAI,CAAC;IAClB,UAAiB,QAAQ;QACrB,EAAE,EAAE,MAAM,CAAC;QACX,KAAK,EAAE,MAAM,EAAE,CAAC;KACnB;IAED,KAAY,EAAE,GAAG,MAAM,CAAC;CAC3B"}
