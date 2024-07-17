@@ -2,7 +2,7 @@
     "name": "cntsc",
     "version": "0.0.1",
     "description": "Celestia Node TypeScript SDK",
-    "main": "dist/index.js",
+    "main": "dist/src/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/ashishbhintade/cntsc.git"
