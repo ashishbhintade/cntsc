@@ -36,7 +36,7 @@ class Client {
         return __awaiter(this, void 0, void 0, function* () {
             const headers = {
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${this.apiKey}`,
+                Authorization: this.apiKey ? `Bearer ${this.apiKey}` : "",
             };
             try {
                 const response = yield fetch(this.url, {

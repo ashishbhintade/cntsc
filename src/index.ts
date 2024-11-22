@@ -38,7 +38,7 @@ export class Client {
     async request(payload: any): Promise<any> {
         const headers: HeadersInit = {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${this.apiKey}`,
+            Authorization: this.apiKey ? `Bearer ${this.apiKey}` : "",
         };
 
         try {
