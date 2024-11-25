@@ -79,7 +79,7 @@ class Blob {
      */
     Submit(blobs, gasPrice) {
         return __awaiter(this, void 0, void 0, function* () {
-            const jsonRequest = Object.assign(Object.assign({}, constants_1.Payload), { method: "blob.Included", params: [blobs, gasPrice] });
+            const jsonRequest = Object.assign(Object.assign({}, constants_1.Payload), { method: "blob.Submit", params: [blobs, { gasPrice }] });
             // Send the fetch request
             return yield this.client.request(jsonRequest);
         });

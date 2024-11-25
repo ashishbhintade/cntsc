@@ -110,8 +110,8 @@ export class Blob {
     ): Promise<blob.Proof> {
         const jsonRequest: any = {
             ...Payload,
-            method: "blob.Included",
-            params: [blobs, gasPrice],
+            method: "blob.Submit",
+            params: [blobs, { gasPrice }],
         };
 
         // Send the fetch request
